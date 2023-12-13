@@ -1,0 +1,16 @@
+image:
+  repository: test.harbor.com/test/backend
+  tag: latest
+
+service:
+  name: backend
+  port: 8080
+
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  hosts:
+    - host: backend.example.com
+      paths:
+        - path: /

@@ -1,0 +1,16 @@
+image:
+  repository: test.harbor.com/test/frontend
+  tag: latest
+
+service:
+  name: frontend
+  port: 3000
+
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  hosts:
+    - host: frontend.example.com
+      paths:
+        - path: /
