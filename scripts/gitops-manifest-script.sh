@@ -1,5 +1,5 @@
 #!/bin/bash
-MODULES=($TARGET)
+MODULES=$TARGET
 APP_LIST="backend frontend"
 #for TARGET in "${MODULES[@]}"
 #do
