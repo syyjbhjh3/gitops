@@ -5,7 +5,7 @@ APP_LIST="backend frontend"
 echo "Deploy target application: "$TARGET
 echo "TAG: "$TAG
 
-helm template -n test $TARGET charts/$TARGET -f charts/$TARGET/$TARGET.yaml \
+helm template -n test $TARGET charts/$TARGET -f charts/$TARGET/values.yaml \
      --set image.tag=${TAG} > manifests/$TARGET.yaml
 
 # git add/commit/push
