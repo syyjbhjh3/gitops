@@ -15,4 +15,4 @@ helm template -n test $TARGET charts/$TARGET -f charts/$TARGET/values.yaml \
 # git add/commit/push
 git add .
 git commit -m "updating manifest file completed."
-git push origin HEAD:main
+git push origin main
